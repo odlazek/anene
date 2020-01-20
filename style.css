@@ -5,19 +5,39 @@ html {
  
 }
 
-.prva{
-    background-color: black;
-       height: 100vh;
+#prva{
+     background: url("an'ene.jpg") no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+       height: 70vh;
 }
 
+
+
+
 h1{
-    color: #CE3B2B;
-    margin-top: 15vh;
+    color: #E23C27;
+    font-family: 'Oswald';
+   margin-top: 5vh;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+   
+   
+   
+}
+h2{
+    font-family: 'Oswald';
+    font-size: 1.2rem;
+    padding-top: 5px;
 }
 
 hr{
-    border: 1px solid #CE3B2B;
-    width: 10vw;
+    border: 1px solid #151515;
+    width: 1rem;
+    margin-bottom: 40px;
+    margin-top: -15px;
 
 }
 
@@ -25,36 +45,52 @@ hr{
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: base;
     align-items:center;
-    height: 80vh;
+    height: 100vh;    
+}
+.logotip{
+    padding-top: 10vw;
+   
     
 }
+
+.navigation{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
 .nav{
-    
+   
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #151515;
+    height: 50px;
+    
 
     
 }
 
 ul a{
-    color: #CE3B2B;
+    color: white;
     padding: 1rem;
-    font-size: 2rem;
+    font-size: 1rem;
+    font-family: 'Oswald';
     
    
     
 }
 
 ul a:hover{
-    color: aliceblue;
+    color: #CE3B2B;
      text-decoration: none;
 }
 
 #about > p{
-    width: 70%;
+    width: 40%;
+    text-align:justify;
+    
 }
 
 .logo img{
@@ -67,6 +103,7 @@ section{
      display: flex;
     flex-direction: column;
     align-items: center;
+    width:100vw;
 
 }
 
@@ -111,6 +148,10 @@ section{
    padding: 20px; 
     text-align: center;
 }
+.mem-text{
+    text-align: justify;
+    
+}
 
 p > b{
     color: #CE3B2B;
@@ -120,60 +161,36 @@ p > b{
 
 
 footer{
-    background-color: black;
+    background-color: #151515;
     color: white;
-    height: 3rem;
+    height: 50px;
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content:space-around;
+    align-items:center;
 }
 
 
 footer img{
     
-    height: 2rem;
+    height: 1.5rem;
+    border-radius: 20px;
+    padding-right: auto;
     
 }
 
 footer div{
-    margin-right: 1rem;
-    margin-left: auto;
-    padding: 5px;
+   font-size: 0.7rem;
+    padding: 10px;
+    
 }
 
 
-#navbar1 {
-  background-color: black; 
-  position: fixed; 
-  top: -100px; 
-  width: 100%;
-  transition: top 0.3s; 
-}
-
-#navbar1 a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-
-#navbar1 a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.navLogo{
-    height: 45px;
-    padding: 5px;
-    float: right;
-}
 
 .concerts{
     display: flex;
     flex-direction: column;
     margin: 10px;
-    
     padding: 10px;
  
    
@@ -193,6 +210,7 @@ footer div{
     background-color: black;
     padding: 10px;
     margin: 10px;
+    width: 80px;
 }
 
 .eventInfo{
@@ -208,22 +226,31 @@ footer div{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(400px,1fr)); 
     grid-gap: 10px;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:0px;
+    max-width: 99vw;
+    margin-bottom: 10px;
     
 }
 
 .album div{
-    padding: 12px;  
+
+    margin-bottom:auto;
+    
+   
 }
 
 .album img {
-	width: 100%;
-	transition: all 1s;
+	width: 90%;
+    padding-bottom: auto;
+  
+    
+
 }
 
 .album img:hover {
-	transform: scale(1.1);
+	
 }
 
 @charset "UTF-8";

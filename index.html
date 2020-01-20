@@ -7,57 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Your own stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
      
-      <section class="prva">
-        <div class="logo">
-                <img alt="logo" src="logo.png" class="animated zoomIn">
-        </div>
-          
-           <div >
+      <section id="prva">
+        <div class="navigation">
             <ul class="nav">
-                <li><a href="#about">OPIS</a></li>
-                <li><a href="#band">ČLANI</a></li>
-                <li><a href="#concert">KONCERTI</a></li>
-                <li><a href="#galery">GALERIJA</a></li> 
+                <li><b><a href="#about">O NAS</a></b></li>
+                <li><b><a href="#band">ČLANI</a></b></li>
+                <li><b><a href="#concert">KONCERTI</a></b></li>
+                <li><b><a href="#galery">GALERIJA</a></b></li> 
+                
            </ul>
           </div>
           
+
+          
+        <div class="logo">
+                <img alt="logo" src="logo.png" class="animated zoomIn logotip">
+        </div>
+          
+          
+          
       </section>
       
-        <div id="navbar1">
-  <a href="#about">OPIS</a>
-  <a href="#band">ČLANI</a>
-  <a href="#concert">KONCERTI</a>
-  <a href="#galery">GALERIJA</a>
-            <img alt="logo" src="logo.png" class="navLogo">
-      </div>
       
       <section id="about">
    
          
-            <h1>OPIS</h1> 
+            <h1>AN'ENE</h1> 
+           
             <hr>
-          
-          <p>Smo glasbena skupina <b>AN'ENE.</b><br>
+          <p>Smo glasbena skupina <b>AN'ENE.</b>
              Radi preigravamo glasbo v stilu rocka, bluesa, funka, reggaea... pa še kaj bi se našlo.
               2/3 banda prihaja iz Velenja, preostalih 33,3% pa je iz Krškega. Na našo srečo, smo vsi stacionirani v Ljubljani, 
-              kjer se v starem jugoslovanskem bunkerju pridno ogrevamo za prihajajoče izzive.<br>
-               Če ste za dober žur, smo pravi naslov za vas. Seveda nas lahko brez zadržkov kontaktirate.<br>
+              kjer se v starem jugoslovanskem bunkerju pridno ogrevamo za prihajajoče izzive.
+               Če ste za dober žur, smo pravi naslov za vas. Seveda nas lahko brez zadržkov kontaktirate.
                 More to come, stay tuned. </p>
             
-           <img src="an'ene.jpg" alt="Band">
+       
 
       </section>
-      
+      <br>
           
       <section id="band">
         <h1>ČLANI</h1> 
@@ -67,7 +67,7 @@
                     <img alt="rok" src="roko1.jpg">
                     <div class="member-text">
                     <h2>Kitara in vokal</h2>
-                    <p> <b>Rok Odlazek </b>- virtuoz, ki nas s svojim "Stratom" zlahka popelje v čase Jimija, hkrati pa s širokim spektrom delayev in reverbov odpira vrata v nove, neodkrite dimenzije.</p>
+                    <p class="mem-text"> <b>Rok Odlazek </b>- virtuoz, ki nas s svojim "Stratom" zlahka popelje v čase Jimija, hkrati pa s širokim spektrom delayev in reverbov odpira vrata v nove, neodkrite dimenzije.</p>
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@
                     <img alt="grega" src="gregag.jpg">
                     <div class="member-text">
                     <h2>Bobni</h2>
-                    <p><b>Grega Gq </b>- strokovnjak na področju elegantnih "drum fillov", s katerimi zapolni prav vsako odvečno luknjo in s svojimi poliritmi zmede še tako izkušenega basista.</p>
+                    <p class="mem-text"><b>Grega Gq </b>- strokovnjak na področju elegantnih "drum fillov", s katerimi zapolni prav vsako odvečno luknjo in s svojimi poliritmi zmede še tako izkušenega basista.</p>
                     </div>
                 </div>
 
@@ -83,7 +83,7 @@
                     <img alt="nace" src="nacej.jpg">
                     <div class="member-text">
                     <h2>Bass kitara in vokal</h2>
-                    <p><b>Nace Jerončič</b> - on pa igra bas.</p>
+                    <p class="mem-text"><b>Nace Jerončič</b> - on pa igra bas.</p>
                     </div>
                 </div>
           </div>
@@ -91,8 +91,7 @@
       
       <section id="concert">
           <h1>KONCERTI</h1>
-          <hr>
-          
+         <hr>
           
           <div class="concerts">
             <div class="event">
@@ -146,7 +145,7 @@
       <section id="galery">
           
           <h1>GALERIJA</h1>
-          <hr>
+         <hr>
         <div class="album">  
             <div><img src="rok.jpg"></div>
             <div><img src="nace.jpg"></div>
@@ -154,7 +153,7 @@
             <div><img src="gregag.jpg"></div>
             <div><img src="nacej.jpg"></div>
             <div><img src="roko.jpg"></div>
-            <div><img src="an'ene.jpg"></div>
+      
     
            
 	
@@ -162,15 +161,14 @@
       </section>
       
       <footer>
-          &nbsp;Social media: &nbsp;
-        <a href="https://www.facebook.com/anene-103829721114038/"><img alt="facebook" src="Facebook.png"></a>
-        <div>Made with love.</div>
+        <a href="https://www.facebook.com/anene-103829721114038/"><img alt="facebook" src="Facebook.png"></a> 
+        <div>Made by Odlazek</div>
       </footer>
       
       <script>
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.getElementById("navbar1").style.top = "0";
   } else {
     document.getElementById("navbar1").style.top = "-100px";
