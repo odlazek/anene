@@ -6,9 +6,11 @@ html {
   scroll-behavior: smooth;
  
 }
-
+@-ms-viewport{
+    width: device-width;
+}
 #prva{
-     background: url("an'ene.jpg") no-repeat center center; 
+     background: url("images/an'ene.jpg") no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -90,11 +92,66 @@ ul a:hover{
      text-decoration: none;
 }
 
+li img{
+  height: 30px;
+}
+
+.navigationMobile{
+  width: 100vw;
+  height: 50px;
+  position: fixed;
+  z-index: 1;
+  display: none;
+   
+
+}
+@media only screen and (max-width: 600px) {
+.navigationMobile{
+  display: block;
+}
+}
+
+#mobileLink a{
+  text-align: center;
+     
+}
+#mobileLink{
+  display: none;
+}
+
+.navigationMobile a{
+  display: block;
+  color: white;
+   background-color: #151515;
+   padding: 5px;
+  
+
+}
+
+.menuIcon{
+  display: block;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+
+
+.imgNav{
+  padding auto;
+  height: 40px;
+  padding:auto;
+ 
+}
+
+
 #about > p{
     width: 40%;
     text-align:justify;
     
 }
+
+
 
 @media only screen and (max-width: 1300px) {
     #about > p{
@@ -112,9 +169,13 @@ section{
      display: flex;
     flex-direction: column;
     align-items: center;
-    width:100vw;
-    
+    width:90vw;
+    margin-left: auto;
+    margin-right:auto;
+}
 
+#prva{
+  width: 100vw;
 }
 
 
@@ -139,13 +200,15 @@ section{
     flex-direction: column;
     margin: 20px;
 
+
    
 }
 .member > img{
     border-radius: 200px;
    width:100%;
-  
+
 }
+
 
 @media only screen and (max-width: 520px) {
     .member{
@@ -240,28 +303,59 @@ footer div{
     justify-content:space-around;
     align-items:center;
     padding-top:0px;
-    max-width: 90vw;
     margin-bottom: 10px;
-    
 }
 
 .album div{
-
+    overflow: hidden;
     margin-bottom:auto;
-    
-   
+    height: 300px;  
+    transition: 0.5s;
+    filter:grayscale(100%);
+}
+
+.album div:hover{
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  z-index: 999;
 }
 
 .album img {
-	width: 90%;
-    padding-bottom: auto;
-  
-    
+	width: 100%;
 
 }
 
-.album img:hover {
-	
+
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.9);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
 }
 
 @charset "UTF-8";

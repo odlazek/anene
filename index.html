@@ -14,14 +14,17 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+      <!-- Lightbox usage markup -->
+      <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="style.css">
    
   </head>
   <body>
      
-      <section id="prva">
+    
         <div class="navigation">
             <ul class="nav">
+                
                 <li><b><a href="#about">O NAS</a></b></li>
                 <li><b><a href="#band">ČLANI</a></b></li>
                 <li><b><a href="#concert">KONCERTI</a></b></li>
@@ -29,11 +32,25 @@
                 
            </ul>
           </div>
-          
+        
 
+        <div class="navigationMobile">
+            <a href="#" class="home"><img class="imgNav" id="logoAnene" alt="logo" src="images/logo.png"></a>
+            <div id="mobileLink">
+              <a href="#about">O NAS</a>
+              <a href="#band">ČLANI</a>
+              <a href="#concert">KONCERTI</a>
+              <a href="#galery">GALERIJA</a>
+            </div>
+            <a href="javascript:void(0);" class="menuIcon" onclick="showMenu();"><img src="Images/bars-solid.png" class="imgNav mr-1"></a>
+        </div>
+
+     
+
+      <section id="prva">
           
         <div class="logo">
-                <img alt="logo" src="logo.png" class="animated zoomIn logotip">
+                <img alt="logo" src="images/logo.png" class="animated zoomIn logotip">
         </div>
           
           
@@ -60,11 +77,11 @@
       <br>
           
       <section id="band">
-        <h1>ČLANI</h1> 
-          <hr>
-          <div class="members">
+          <h1>ČLANI</h1>
+         <hr>
+          <div class="members mt-2">
                 <div class="member">
-                    <img alt="rok" src="roko1.jpg">
+                    <img alt="rok" src="images/roko1.jpg">
                     <div class="member-text">
                     <h2>Kitara in vokal</h2>
                     <p class="mem-text"> <b>Rok Odlazek </b>- virtuoz, ki nas s svojim "Stratom" zlahka popelje v čase Jimija, hkrati pa s širokim spektrom delayev in reverbov odpira vrata v nove, neodkrite dimenzije.</p>
@@ -72,7 +89,7 @@
                 </div>
 
                 <div class="member">
-                    <img alt="grega" src="gregag.jpg">
+                    <img alt="grega" src="images/gregag.jpg">
                     <div class="member-text">
                     <h2>Bobni</h2>
                     <p class="mem-text"><b>Grega Gq </b>- strokovnjak na področju elegantnih "drum fillov", s katerimi zapolni prav vsako odvečno luknjo in s svojimi poliritmi zmede še tako izkušenega basista.</p>
@@ -80,7 +97,7 @@
                 </div>
 
                 <div class="member">
-                    <img alt="nace" src="nacej.jpg">
+                    <img alt="nace" src="images/nacej.jpg">
                     <div class="member-text">
                     <h2>Bass kitara in vokal</h2>
                     <p class="mem-text"><b>Nace Jerončič</b> - on pa igra bas.</p>
@@ -147,26 +164,50 @@
           <h1>GALERIJA</h1>
          <hr>
         <div class="album">  
-            <div><img src="rok.jpg"></div>
-            <div><img src="nace.jpg"></div>
-            <div><img src="Grega.PNG"></div>
-            <div><img src="gregag.jpg"></div>
-            <div><img src="nacej.jpg"></div>
-            <div><img src="roko.jpg"></div>
+            <div><a href="#img1"><img src="images/rok.jpg" ></a></div>
+            <div><a href="#img2"><img src="images/nace.jpg"></a></div>
+            <div><a href="#img3"><img src="images/Grega.PNG"></a></div>
+            <div><a href="#img4"><img src="images/gregag.jpg"></a></div>
+            <div><a href="#img5"><img src="images/nacej.jpg"></a></div>
+            <div><a href="#img6"><img src="images/roko.jpg"></a></div>
       
     
            
 	
         </div>
       </section>
-      
+
+
+              <!-- fullscreen img --> 
+        <a href="#_" class="lightbox" id="img1">
+          <img src="images/rok.jpg" >
+        </a>  
+        <a href="#_" class="lightbox" id="img2">
+          <img src="images/nace.jpg">
+        </a>  
+      <a href="#_" class="lightbox" id="img3">
+          <img src="images/Grega.PNG">
+        </a>
+        <a href="#_" class="lightbox" id="img4">
+          <img src="images/gregag.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="img5">
+          <img src="images/nacej.jpg">
+        </a>
+        <a href="#_" class="lightbox" id="img6">
+          <img src="images/roko.jpg">
+        </a>
+
+
       <footer>
-        <a href="https://www.facebook.com/anene-103829721114038/" target="_blank"><img alt="facebook" src="Facebook.png"></a> 
+        <a href="https://www.facebook.com/anene-103829721114038/" target="_blank"><img alt="facebook" src="images/Facebook.png"></a> 
         <div>Made by Odlazek</div>
       </footer>
       
 
-
+<script type="text/javascript" src="javascript.js">
+  
+  </script>
    
   </body>
 </html>
