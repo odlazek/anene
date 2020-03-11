@@ -7,12 +7,12 @@ function showMenu() {
 	}
 }
 
-let bandPosition =  document.getElementById('prva').offsetTop;
+let bandPosition =  document.getElementById('about').offsetTop;
 let logoNavigacija = document.getElementsByClassName('imgNav');
 
 
 function showLogo(){
-if (bandPosition < document.documentElement.scrollTop){
+if (bandPosition < (document.documentElement.scrollTop +200)){
 logoNavigacija[0].style.opacity="100";
 logoNavigacija[1].style.opacity="100";
 }else{
