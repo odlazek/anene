@@ -8,7 +8,7 @@ function showMenu() {
 }
 
 let bandPosition =  document.getElementById('prva').offsetTop;
-let logoNavigacija = document.getElementsByClassName('navLogo');
+let logoNavigacija = document.getElementsByClassName('imgNav');
 
 
 function showLogo(){
