@@ -7,3 +7,16 @@ function showMenu() {
 	}
 }
 
+let bandPosition =  document.getElementById('prva').offsetTop;
+let logoNavigacija = document.getElementsByClassName('navLogo');
+
+
+function showLogo(){
+if (bandPosition < document.documentElement.scrollTop){
+logoNavigacija[0].style.opacity="100";
+logoNavigacija[1].style.opacity="100";
+}else{
+logoNavigacija[0].style.opacity="0";
+logoNavigacija[1].style.opacity="0";
+}
+}
