@@ -20,3 +20,5 @@ logoNavigacija[0].style.opacity="0";
 logoNavigacija[1].style.opacity="0";
 }
 }
+
+/* comment */
